@@ -1,0 +1,94 @@
+body {
+    background-color: darkgoldenrod;
+}
+
+.container {
+    font-size: 20px;
+    background-color: aquamarine;
+    width: 90vw;
+    max-width:30em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 1em 2em rgba(59, 59, 59, 0.5);
+    
+}
+
+#options-container {
+    text-align: center
+}
+
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 2em 0;
+}
+
+#options-container button {
+    padding: 0.5em 1em;
+    border: solid black 2px;
+    background-color: whitesmoke;
+    border-radius: .5em;
+}
+
+#options-container button:disabled {
+    border: solid gray 2px;
+    color: gray
+    
+}
+
+#options-container button.active {
+    background-color: gold;
+    border: solid black 2px;
+}
+
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em
+}
+
+#letter-container button{
+    height: 2em;
+    width: 2em;
+    border-radius: 0.1em;
+    background-color: antiquewhite;
+}
+
+.newgame-window{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5em;
+}
+
+#userinput-container {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+    gap: .3em;
+}
+
+.canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.hide {
+    display: none;
+}
